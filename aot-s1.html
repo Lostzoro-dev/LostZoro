@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Attack on Titan - Season 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background:#0b0b0b;color:#fff;font-family:Arial;margin:0;padding:0;}
+.header{padding:15px;text-align:center;background:#111;}
+.ep-list{padding:10px;}
+.ep-item{background:#1a1a1a;margin-bottom:8px;padding:10px;border-radius:6px;}
+.ep-item:hover{background:#222;cursor:pointer;}
+.video-box{position:relative;width:100%;padding-top:56.25%;}
+.video-box iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+</style>
+<script>
+function playEp(url){
+ document.getElementById('player').src=url;
+ window.scrollTo(0,0);
+}
+</script>
+</head>
+<body>
+<div class="header"><h2>Attack on Titan - Season 1</h2></div>
+<div class="video-box"><iframe id="player" src="" allowfullscreen></iframe></div>
+<div class="ep-list">
+<div class="ep-item" onclick="playEp('https://streamtape.com/')">Episode 1</div>
+<div class="ep-item" onclick="playEp('https://streamtape.com/')">Episode 2</div>
+<div class="ep-item" onclick="playEp('https://streamtape.com/')">Episode 3</div>
+</div>
+</body>
+</html>
