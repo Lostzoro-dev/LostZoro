@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LostZoro - Home</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+      box-shadow: 0 0 10px #EF4444;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #EF4444;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .nav-links input {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #EF4444;
+      background: #000;
+      color: #fff;
+    }
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .anime-card {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+    }
+    .anime-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #EF4444;
+    }
+    .anime-card img {
+      width: 100%;
+      display: block;
+    }
+    .anime-card h3 {
+      font-size: 14px;
+      padding: 10px;
+      color: #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">LostZoro</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Anime List</a></li>
+      <li><input type="text" placeholder="Search..."></li>
+    </ul>
+  </nav>
+
+  <!-- Anime Grid Section -->
+  <section class="anime-grid">
+    <a href="aot-s1.html" class="anime-card">
+      <img src="https://i.imgur.com/3N1N7Rj.jpg" alt="Attack on Titan">
+      <h3>Attack on Titan (S1)</h3>
+    </a>
+  </section>
+</body>
+</html>
